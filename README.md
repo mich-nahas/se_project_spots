@@ -2,20 +2,16 @@
 
 ### Overview  
 
-* Intro  
-* Figma  
-* Images  
-  
-**Intro**
-  
-This project is made so all the elements are displayed correctly on popular screen sizes. We recommend investing more time in completing this project, since it's more difficult than previous ones.  
+Welcome to the Spots page. This is a project in which I've applied the coding knowledge I've gained over the past couple of months as a student of TripleTen Bootcamp. On this page you can view a series of different posts on a profile, and click like any of your favorites. You will ultimately be able to edit the profile and add any new posts you wish to create.
+ 
+This project is made so all the elements are displayed correctly on popular screen sizes. This was done by using media queries in CSS files and adjusting the view accordingly. This was also the first project in which I've utilized a grid layout function. I hope you enjoy this work, any feedback for my coding journey is truly appreciated!
   
 **Figma**  
   
-* [Link to the project on Figma](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
+* https://www.figma.com/design/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project%3A-Spots?node-id=2-139&node-type=frame&t=x6WhfNpCV6XZuyNj-0
+
+**GitHub**
+
+* https://github.com/mich-nahas/se_project_spots.git
   
 **Images**  
-  
-The way you'll do this at work is by exporting images directly from Figma — we recommend doing that to practice more. Don't forget to optimize them [here](https://tinypng.com/), so your project loads faster. 
-  
-Good luck and have fun!
