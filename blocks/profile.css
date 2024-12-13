@@ -6,7 +6,7 @@
 
 .profile__avatar {
   margin-right: 20px;
-  border-radius: 5px;
+  border-radius: 8px;
   height: 190px;
   width: 190px;
 }
@@ -24,6 +24,7 @@
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   max-width: 420px;
+  font-weight: 500;
 }
 
 .profile__description {
@@ -46,6 +47,13 @@
   color: #212121;
   gap: 8px;
   line-height: 16px;
+  align-items: center;
+}
+
+.profile__edit-btn:hover {
+  cursor: pointer;
+  opacity: 70%;
+  transition: ease-in-out;
 }
 
 .profile__pencil-icon {
@@ -64,6 +72,12 @@
   width: 149px;
   margin-top: auto;
   font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+
+.profile__add-btn:hover {
+  cursor: pointer;
+  opacity: 80%;
+  transition: ease-in-out;
 }
 
 .profile__add-icon {
@@ -87,7 +101,7 @@
   }
 
   .profile__avatar {
-    margin-right: 0;
+    margin: 0 0 12px 0;
     height: 80px;
     width: 80px;
   }

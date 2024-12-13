@@ -1,8 +1,7 @@
 .footer {
   color: #212121;
   font-family: Poppins, Arial, Helvetica, sans-serif;
-  height: 16px;
   display: flex;
   justify-content: center;
-  padding: 40px 0 40px;
+  padding: 60px 0;
 }

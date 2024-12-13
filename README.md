@@ -10,8 +10,8 @@ This project is made so all the elements are displayed correctly on popular scre
   
 * https://www.figma.com/design/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project%3A-Spots?node-id=2-139&node-type=frame&t=x6WhfNpCV6XZuyNj-0
 
-**GitHub**
+**GitHub Link**
 
-* https://github.com/mich-nahas/se_project_spots.git
+* https://mich-nahas.github.io/se_project_spots/
   
-**Images**  
+**Video**
