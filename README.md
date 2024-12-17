@@ -15,3 +15,5 @@ This project is made so all the elements are displayed correctly on popular scre
 * https://mich-nahas.github.io/se_project_spots/
   
 **Video**
+
+* https://drive.google.com/file/d/1vzABFXNRqf8kFpbU0heYwIP1rqZn--FH/view?usp=sharing 
