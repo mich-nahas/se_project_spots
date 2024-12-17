@@ -25,6 +25,9 @@
   -webkit-box-orient: vertical;
   max-width: 420px;
   font-weight: 500;
+  color: #212121;
+  font-size: 32px;
+  line-height: 32px;
 }
 
 .profile__description {
@@ -35,6 +38,10 @@
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   max-width: 420px;
+  color: #212121b2;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
 }
 
 .profile__edit-btn {
@@ -113,7 +120,7 @@
   }
 
   .profile__edit-btn {
-    align-items: center;
+    align-self: center;
   }
 
   .profile__column {

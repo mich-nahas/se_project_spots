@@ -4,3 +4,8 @@
   padding-bottom: 40px;
 }
 
+@media screen and (max-width: 627px) {
+  .content {
+    padding-bottom: 20px;
+  }
+}
