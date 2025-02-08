@@ -38,7 +38,7 @@ function getCardElement(data) {
 function openModal() {
   console.log("ModalOpen");
   editModalNameInput.value = profileName.textContent;
-  editModalNameInput.value = profileDescription.textContent;
+  editModalDescriptionInput.value = profileDescription.textContent;
   editModal.classList.add("modal__opened");
 }
 
@@ -55,7 +55,7 @@ function handleEditFormSubmit(evt) {
 
 profileEditButton.addEventListener("click", openModal);
 editModalCloseBtn.addEventListener("click", closeModal);
-//editFormElement.addEventListener("submit");
+editFormElement.addEventListener("submit", handleEditFormSubmit);
 
 for (let i = 0; i < initialCards.length; i++) {
   const cardElement = getCardElement(initialCards[i]);

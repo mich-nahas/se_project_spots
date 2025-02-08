@@ -34,10 +34,19 @@
   right: 50px;
   width: 40px;
   height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: #fff;
+}
+
+.modal__close-btn-x {
 }
 
 .modal__title {
   margin: 0 0 32px;
+  font-weight: 500;
 }
 
 .modal__label {
