@@ -1,5 +1,6 @@
 .card {
   max-width: 413px;
+  position: relative;
 }
 
 .card__image {
@@ -68,7 +69,9 @@
   height: 32px;
   border: none;
   cursor: pointer;
-  transform: translate(-50%, -50%);
+  position: absolute;
+  bottom: 403px;
+  right: 10px;
 }
 
 .card__delete-btn:hover {
