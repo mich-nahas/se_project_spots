@@ -13,11 +13,12 @@
   border-radius: 4px;
   font-family: Poppins, Arial, Helvetica, sans-serif;
   padding: 0 20px;
-  transition: visibility 0.3s, opacity 0.3s ease-in;
+  transition: opacity 0.3s ease-in, visibility 0.3s;
 }
 
 .modal__is-opened {
   visibility: visible;
+  opacity: 0.3s ease-in;
 }
 
 .modal__image {
@@ -28,7 +29,7 @@
   max-height: 80vh;
 }
 
-.modal__close_type_preview {
+.modal__close-btn_type_preview {
   background-image: url("../images/PreviewExit.svg");
   background-color: transparent;
   border: none;
@@ -38,6 +39,10 @@
   right: -52.57px;
   cursor: pointer;
   position: absolute;
+}
+
+.modal__close-btn_type_preview:hover {
+  opacity: 40%;
 }
 
 .modal__content_type_preview {
@@ -114,6 +119,7 @@
 
 .modal__input:hover {
   cursor: pointer;
+  border: 1px solid #212121;
 }
 
 .modal__submit-btn {
@@ -165,7 +171,7 @@
   }
 
   .modal__content_type_preview {
-
+    max-width: 288px;
   }
 }
 
@@ -180,7 +186,7 @@
     object-fit: cover;
   }
 
-  .modal__close_type_preview {
+  .modal__close-btn_type_preview {
     width: 30px;
     height: 30px;
     top: 10px;

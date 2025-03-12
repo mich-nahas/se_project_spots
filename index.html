@@ -13,16 +13,16 @@
 <body>
   <div class="page">
     <header class="header">
-      <img src="./images/proj_logo.svg" alt="Spots Logo" class="header__logo">
+      <img src="./images/proj_logo.svg" alt="Spots Logo" class="header__logo" />
     </header>
     <main class="content">
       <section class="profile page__section">
-        <img src="./images/avatar.jpg" alt="Bessie Coleman" class="profile__avatar">
+        <img src="./images/avatar.jpg" alt="Bessie Coleman" class="profile__avatar" />
         <div class="profile__column">
           <h1 class="profile__name">Bessie Coleman</h1>
           <p class="profile__description">Civil Aviator</p>
         <button type="button" class="profile__edit-btn">
-          <img src="./images/Pencil_icon.svg" alt="Pencil icon" class="profile__pencil-icon"/>Edit Profile
+          <img src="./images/Pencil_icon.svg" alt="Pencil icon" class="profile__pencil-icon" />Edit Profile
         </button>
         </div>
         <button type="button" class="profile__add-btn">
@@ -33,7 +33,7 @@
         <ul class="cards__list">
           <template id="card-template">
             <li class="card">
-              <img src="" alt="" class="card__image">
+              <img src="" alt="Card Image" class="card__image" />
               <div class="card__content">
               <h2 class="card__title"></h2>
               <button type="button" class="card__like-btn"></button>
@@ -47,9 +47,9 @@
     <footer class="footer">2025 &copy; Spots</footer>
     <div class="modal" id="edit-profile-modal">
       <div class="modal__container">
-        <button type="button" class="modal__close-btn"><img src="./images/Close_Icon.svg" /></button>
+        <button type="button" class="modal__close-btn"><img src="./images/Close_Icon.svg" alt="Exit" /></button>
         <h2 class="modal__title">Edit Profile</h2>
-        <form name="edit-profile" action="" class="modal__form">
+        <form name="edit-profile" class="modal__form">
           <label for="profile-name-input" class="modal__label">
             Name
             <input id="profile-name-input" type="text" class="modal__input" placeholder="Name"/>
@@ -58,13 +58,13 @@
             Description
             <input id="profile-description-input" type="text" class="modal__input" placeholder="Description"/>
           </label>
-          <button type="submit" class="modal__submit-btn" action="/save-profile">Save</button>
+          <button type="submit" class="modal__submit-btn">Save</button>
         </form>
       </div>
     </div>
     <div class="modal" id="add-card-modal">
       <div class="modal__container">
-        <button type="button" class="modal__close-btn"><img src="./images/Close_Icon.svg" /></button>
+        <button type="button" class="modal__close-btn"><img src="./images/Close_Icon.svg" alt="Exit" /></button>
         <h2 class="modal__title">New Post</h2>
         <form name="edit-profile" id="add-card-form" class="modal__form">
           <label for="add-card-link-input" class="modal__label">
@@ -75,7 +75,7 @@
             Caption
             <input id="add-card-name-input" type="text" class="modal__input" placeholder="Type your caption" name="name" />
           </label>
-          <button type="submit" class="modal__submit-btn" action="/save-profile">Save</button>
+          <button type="submit" class="modal__submit-btn">Save</button>
         </form>
       </div>
     </div>
@@ -84,7 +84,7 @@
     <div class="modal__content modal__content_type_preview">
       <button
         aria-label="Close modal"
-        class="modal__close modal__close_type_preview"
+        class="modal__close-btn modal__close-btn_type_preview"
         type="button">
       </button>
       <img class="modal__image" src="#" alt="Previewing Image" />
