@@ -14,11 +14,12 @@
   font-family: Poppins, Arial, Helvetica, sans-serif;
   padding: 0 20px;
   transition: opacity 0.3s ease-in, visibility 0.3s;
+  opacity: 0;
 }
 
 .modal_is-opened {
   visibility: visible;
-  opacity: 0.3s ease-in;
+  opacity: 1 ease-in;
 }
 
 .modal__image {
@@ -111,7 +112,7 @@
 
 .modal__input {
   padding: 16px 12px;
-  border: 1px solid #212121 40%;
+  border: 1px solid rgba(33, 33, 33, 0.4);
   border-radius: 8px;
   line-height: 20px;
   font-weight: 500;
