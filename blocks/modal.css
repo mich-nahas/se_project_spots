@@ -16,7 +16,7 @@
   transition: opacity 0.3s ease-in, visibility 0.3s;
 }
 
-.modal__is-opened {
+.modal_is-opened {
   visibility: visible;
   opacity: 0.3s ease-in;
 }
@@ -173,6 +173,7 @@
   .modal__content_type_preview {
     max-width: 288px;
   }
+
 }
 
 @media (max-width: 320px) {
@@ -187,9 +188,9 @@
   }
 
   .modal__close-btn_type_preview {
-    width: 30px;
-    height: 30px;
-    top: 10px;
-    left: 10px;
+    width: 40px;
+    height: 40px;
+    top: -45px;
+    right: -4px;
   }
 }
