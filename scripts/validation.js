@@ -1,29 +1,22 @@
-const settings = {
-  formSelector: ".modal__form",
-  inputSelector: ".modal__input",
-  submitButtonSelector: ".modal__submit-btn",
-  inactiveButtonClass: ".modal__submit-btn_disabled",
-  inputErrorClass: ".modal__input_type_error",
-  errorClass: ".modal__error"
-};
-
 const showInputError = (formEl, inputEl, errorMsg, config) => {
   const errorMsgEl = formEl.querySelector(`#${inputEl.id}-error`);
   errorMsgEl.textContent = errorMsg;
   inputEl.classList.add(config.inputErrorClass);
+  errorMsgEl.classList.add(config.errorClass);
 };
 
 const hideInputError = (formEl, inputEl, config) => {
-  const errorMsgEl = document.querySelector(`#${inputEl.id}-error`);
+  const errorMsgEl = formEl.querySelector(`#${inputEl.id}-error`);
   errorMsgEl.textContent = "";
-  inputEl.classList.add(config.inputErrorClass);
+  inputEl.classList.remove(config.inputErrorClass);
+  errorMsgEl.classList.remove(config.errorClass);
 };
 
-const checkInputValidity = (formEl, inputEl) => {
+const checkInputValidity = (formEl, inputEl, config) => {
   if (!inputEl.validity.valid) {
-    showInputError(formEl, inputEl, inputEl.validationMessage);
+    showInputError(formEl, inputEl, inputEl.validationMessage, config);
   } else {
-    hideInputError(formEl, inputEl);
+    hideInputError(formEl, inputEl, config);
   }
 };
 
@@ -45,12 +38,12 @@ const toggleButtonState = (inputList, buttonEl, config) => {
 const disableButton = (buttonEl, config) => {
   buttonEl.disabled = true;
   buttonEl.classList.add(config.inactiveButtonClass);
-}
+};
 
 const resetValidation = (formEl, inputList, config) => {
-  inputList.forEach((input) => {
-    hideInputError(formEl, input, config);
-  });
+  const button = formEl.querySelector(config.submitButtonSelector);
+  inputList.forEach((input) => hideInputError(formEl, input, config));
+  disableButton(button, config);
 };
 
 const setEventListeners = (formEl, config) => {
@@ -74,4 +67,4 @@ const enableValidation = (config) => {
   })
 };
 
-enableValidation(settings);
+export { enableValidation, resetValidation };
