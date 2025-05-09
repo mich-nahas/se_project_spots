@@ -33,7 +33,7 @@ const validationConfig = {
   submitButtonSelector: ".modal__submit-btn",
   inactiveButtonClass: "modal__submit-btn_disabled",
   inputErrorClass: "modal__input_type_error",
-  errorClass: "modal__error_visible"
+  errorClass: "modal__error_visible",
 };
 
 enableValidation(validationConfig);
@@ -123,11 +123,8 @@ function handleEditFormSubmit(evt) {
 
 function handleAddCardSubmit(evt) {
   evt.preventDefault();
-  console.log(cardNameInput.value);
-  console.log(cardLinkInput.value);
   const inputValues = { name: cardNameInput.value, link: cardLinkInput.value };
-  const cardEl = getCardElement(inputValues);
-  cardsList.prepend(cardEl);
+  renderCard(inputValues);
   cardForm.reset();
   const inputList = Array.from(cardForm.querySelectorAll(validationConfig.inputSelector));
   resetValidation(cardForm, inputList, validationConfig);
@@ -149,9 +146,18 @@ function handleEscClose(evt) {
   }
 }
 
+function renderCard(item, method = "prepend") {
+  const cardElement = getCardElement(item);
+  cardsList[method](cardElement);
+}
+
 profileEditBtn.addEventListener("click", () => {
   nameInput.value = profileNameEl.textContent;
   descriptionInput.value = profileDescriptionEl.textContent;
+
+  const inputList = Array.from(editForm.querySelectorAll(validationConfig.inputSelector));
+  resetValidation(editForm, inputList, validationConfig);
+
   openModal(editModal);
 });
 
@@ -171,6 +177,5 @@ editForm.addEventListener("submit", handleEditFormSubmit);
 cardForm.addEventListener("submit", handleAddCardSubmit);
 
 initialCards.forEach((item) => {
-  const cardEl = getCardElement(item);
-  cardsList.append(cardEl);
+  renderCard(item, "append");
 });
