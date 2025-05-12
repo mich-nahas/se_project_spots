@@ -126,9 +126,6 @@ function handleAddCardSubmit(evt) {
   const inputValues = { name: cardNameInput.value, link: cardLinkInput.value };
   renderCard(inputValues);
   cardForm.reset();
-  const inputList = Array.from(cardForm.querySelectorAll(validationConfig.inputSelector));
-  resetValidation(cardForm, inputList, validationConfig);
-  disableButton(cardSubmitBtn, validationConfig);
   closeModal(cardModal);
 }
 
